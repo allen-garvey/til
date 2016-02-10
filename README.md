@@ -1,4 +1,4 @@
-# TIL (Things I Learned)
+# TIL (Today I Learned)
 
 A collection of code snippets and instructions for various things I&#8217;ve learned.
 
