@@ -1,0 +1,11 @@
+/*
+	To make a div at least the height of the window, or any other height,
+	(useful for making sure footers are always at the bottom of the page)
+	and without having to set 100% percentage widths on all parent elements
+	use vh units
+	Supported at least IE8+
+*/
+
+.full_height_element{
+	min-height: 100vh;
+}
