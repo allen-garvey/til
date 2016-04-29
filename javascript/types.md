@@ -1,0 +1,3 @@
+# JavaScript Types
+
+There are only four basic types in JavaScript: `number`, `string`, `object`, and `undefined`. For historical reasons, null is considered an object, however, you can test for it by `x === null`. Note that `undefined == null` is true. Since an array is an object, you can use `Array.isArray()` to efficiently test if something is an array. Also note that `NaN` is not equal to itself, so the only way to test for `NaN` is with the function `isNaN()`.
