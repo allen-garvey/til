@@ -1,0 +1,12 @@
+/*
+* Object Fit
+* You can use object-fit and object-position to mimic similar functionality
+* from background-image without having to use background images
+* Supported everywhere except IE and Edge
+* http://caniuse.com/#feat=object-fit
+*/
+
+img.cover{
+	object-position: cover;
+	object-position: 50% 50%;
+}
