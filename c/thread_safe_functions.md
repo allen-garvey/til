@@ -1,0 +1,3 @@
+# Thread-safe functions
+
+When writing signal handlers or using threads, you must use thread-safe or reentrant (in C terms) functions. Many standard library functions are not thread safe, such as `puts`, `printf`, `malloc` and `free`. See [here](https://www.gnu.org/software/libc/manual/html_node/Nonreentrancy.html) for information on signal handlers, and [here](http://pubs.opengroup.org/onlinepubs/9699919799/functions/V2_chap02.html#tag_15_09_01) for a list of standard library thread-safe functions.
