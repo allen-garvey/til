@@ -4,5 +4,5 @@
 #service running on FreeBSD
 
 app_name="example.jar"
-pid=`ps aux | grep $app_name | sort | awk 'NR==1{print $2}'`
+pid=`ps aux | grep $app_name | awk 'NR==1{print $2}'`
 kill -9 $pid > /dev/null 2>&1
