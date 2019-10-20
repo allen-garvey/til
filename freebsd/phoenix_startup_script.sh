@@ -6,6 +6,7 @@
 
 name="phoenix_bookmarker"
 rcvar="phoenix_bookmarker_enable"
+phoenix_bookmarker_user="allen"
 start_cmd="phoenix_bookmarker_start"
 stop_cmd="phoenix_bookmarker_stop"
 
