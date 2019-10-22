@@ -6,7 +6,6 @@
 
 name="phoenix_bookmarker"
 rcvar="phoenix_bookmarker_enable"
-phoenix_bookmarker_user="allen"
 start_cmd="phoenix_bookmarker_start"
 stop_cmd="phoenix_bookmarker_stop"
 
@@ -24,12 +23,11 @@ LC_ALL=en_US.UTF-8
 load_rc_config $name
 
 phoenix_bookmarker_start(){
-        cd /home/allen/Sites/phoenix-bookmarker;
-        ./start.sh;
+		su -l allen -c 'cd /home/allen/Sites/phoenix-bookmarker && ./start.sh';
 }
 
 phoenix_bookmarker_stop(){
-        /home/allen/Sites/phoenix-bookmarker/stop.sh;
+        su -l allen -c 'cd /home/allen/Sites/phoenix-bookmarker && ./stop.sh';
 }
 
 run_rc_command "$1"
