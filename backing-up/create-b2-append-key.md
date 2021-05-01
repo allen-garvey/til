@@ -4,4 +4,5 @@
 
 * `apt install backblaze-b2`
 * `backblaze-b2 authorize-account [<masterApplicationKeyId>] [<masterApplicationKey>]`
+* `backblaze-2 list-buckets`
 * `backblaze-b2 create-key --bucket <bucket-name> <key-name> 'listFiles,readFiles,writeFiles'`
