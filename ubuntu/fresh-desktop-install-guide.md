@@ -47,6 +47,8 @@
 
 * chmod +rx on home directory for nginx
 
+* chmod +rx on root of mx external drive mount for nginx
+
 ## Postgres setup
 
 * https://www.digitalocean.com/community/tutorials/how-to-install-postgresql-on-ubuntu-20-04-quickstart
@@ -55,6 +57,12 @@
 
 ## Umbrella
 
-* Go into grenadier `mix ecto.create && mix ecto.migrate` 
+* At project root `mix ecto.create`
+
+* Go into grenadier `mix ecto.migrate` 
+
+* Create grenadier user
+
+* Import database backups `gunzip -c <database_backup>.sql.gz | psql <database_name>`
 
 
