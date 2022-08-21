@@ -19,7 +19,7 @@
 ## Command line setup
 
 * git clone git@github.com:allen-garvey/bash-dotfiles.git
-* sudo apt install curl vim build-essential flatpak erlang postgresql postgresql-contrib nginx libimage-exiftool-perl imagemagick php8.1 php8.1-xml
+* sudo apt install curl vim build-essential flatpak ruby erlang postgresql postgresql-contrib nginx libimage-exiftool-perl imagemagick php8.1 php8.1-xml
 
 ## VS Code
 
@@ -37,5 +37,6 @@
 
 * Gimp - flatpak install https://flathub.org/repo/appstream/org.gimp.GIMP.flatpakref
 
+* Dragon player
 
 
