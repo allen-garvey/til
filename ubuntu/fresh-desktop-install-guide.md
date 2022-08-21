@@ -19,7 +19,7 @@
 ## Command line setup
 
 * git clone git@github.com:allen-garvey/bash-dotfiles.git
-* sudo apt install curl vim build-essential flatpak ruby erlang postgresql postgresql-contrib nginx libimage-exiftool-perl imagemagick php8.1 php8.1-xml
+* sudo apt install curl vim build-essential flatpak inotify-tools ruby erlang postgresql postgresql-contrib nginx libimage-exiftool-perl imagemagick php8.1 php8.1-xml
 
 ## VS Code
 
@@ -28,10 +28,6 @@
 ## Node
 
 * npm install -g npm-check-updates
-
-## Postgres setup
-
-* https://www.digitalocean.com/community/tutorials/how-to-install-postgresql-on-ubuntu-20-04-quickstart
 
 ## Applications
 
@@ -46,5 +42,19 @@
 * apt remove apache2 apache2-bin
 
 * apt autoremove
+
+## Permissions
+
+* chmod +rx on home directory for nginx
+
+## Postgres setup
+
+* https://www.digitalocean.com/community/tutorials/how-to-install-postgresql-on-ubuntu-20-04-quickstart
+
+* Log in to psql `ALTER USER postgres PASSWORD 'postgres';`
+
+## Umbrella
+
+* Go into grenadier `mix ecto.create && mix ecto.migrate` 
 
 
