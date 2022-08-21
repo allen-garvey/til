@@ -39,4 +39,12 @@
 
 * Dragon player
 
+## Apache
+
+* sudo service apache stop
+
+* apt remove apache2 apache2-bin
+
+* apt autoremove
+
 
