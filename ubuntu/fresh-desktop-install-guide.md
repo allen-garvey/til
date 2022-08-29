@@ -35,6 +35,8 @@
 
 * Dragon player
 
+* Git Cola
+
 ## Apache
 
 * sudo service apache stop
