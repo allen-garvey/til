@@ -5,7 +5,7 @@
   ; cd to folder with images and run
   ; time gimp -i -b '(batch-color-correct "*.JPG")' -b '(gimp-quit 0)'
   ; changing *.JPG to image glob type
-  ; script takes approx 6 seconds per image on Ryzen 3500u, ubuntu 20.10
+  ; script takes approx 6-20 seconds per image on Ryzen 3500u, ubuntu 20.10
   ; when installing via flatpak use `flatpak run org.gimp.GIMP` instead of `gimp` command
 
   (define (batch-color-correct pattern  
