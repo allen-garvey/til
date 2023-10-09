@@ -6,3 +6,6 @@ mkdir -p output-directory && ffmpeg -i input.mp4 -vf fps=6 './output-directory/%
 
 # convert frames back to video at 6 fps
 ffmpeg -framerate 6 -f image2 -i ./%4d.png out.mp4
+
+# to re-encode at 24 fps
+ffmpeg -i <input> -filter:v fps=24 <output>
