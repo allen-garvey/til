@@ -1,9 +1,13 @@
-# Ubuntu Desktop Setup
+# Kubuntu Desktop Setup
 
 ## Settings
 
 * Settings->General Behavior: set single click to open folders
 * Make caps lock an additional escape
+
+## Konsole
+
+* Set font to "Noto Mono"
 
 ## Chrome
 
@@ -11,22 +15,30 @@
 
 * Settings->Default Apps->set web browser to Google Chrome
 
+## Command line setup
+
+* sudo apt install git curl vim build-essential flatpak inotify-tools rclone ruby elixir postgresql postgresql-contrib nginx libimage-exiftool-perl imagemagick ffmpeg php8.1 php8.1-xml rysnc
+* git clone git@github.com:allen-garvey/bash-dotfiles.git
+
+## Git
+
+* Set default git user and email address
+
 ## Sublime Text
 
 * Install Sublime Text https://www.sublimetext.com/docs/linux_repositories.html
 * Preferences->Select color scheme->monokai
-
-## Command line setup
-
-* git clone git@github.com:allen-garvey/bash-dotfiles.git
-* sudo apt install curl vim build-essential flatpak inotify-tools rclone ruby erlang postgresql postgresql-contrib nginx libimage-exiftool-perl imagemagick ffmpeg php8.1 php8.1-xml
+* https://github.com/allen-garvey/sublime-snippets
 
 ## VS Code
 
 * https://code.visualstudio.com/docs/setup/linux
+* [Preferences](https://github.com/allen-garvey/vscode-preferences)
 
 ## Node
 
+* `mkdir -p ~/.bin`
+* https://nodejs.org/en/download/prebuilt-binaries
 * npm install -g npm-check-updates
 
 ## Applications
@@ -36,6 +48,8 @@
 * Dragon player
 
 * Git Cola
+
+* Krita
 
 ## Apache
 
@@ -63,8 +77,6 @@
 
 * Go into grenadier `mix ecto.migrate` 
 
-* Create grenadier user
-
-* Import database backups `gunzip -c <database_backup>.sql.gz | psql <database_name>`
+* Import database backup `gunzip -c <database_backup>.sql.gz | psql umbrella`
 
 
