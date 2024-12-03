@@ -4,50 +4,83 @@
 
 * Settings->General Behavior: set single click to open folders
 * Make caps lock an additional escape
+* Change to dark mode
+* Turn on night color
 
 ## Konsole
 
 * Set font to "Noto Mono"
+* Change cursor
 
 ## Chrome
 
-* Search for "install google chrome ubuntu command line"
+* https://www.geeksforgeeks.org/how-to-install-chrome-in-ubuntu - use third party repository option
+
+* Due to key association safety as outlined [here](https://askubuntu.com/questions/1286545/what-commands-exactly-should-replace-the-deprecated-apt-key) follow instructions in the previous link or VS code / sublime instructions to associate Google's key with chrome repository only
+
+* Something like
+```sh
+wget -qO- https://dl.google.com/linux/linux_signing_key.pub | gpg --dearmor > packages.google.gpg
+sudo install -D -o root -g root -m 644 packages.google.gpg /etc/apt/keyrings/packages.google.gpg
+echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/packages.google.gpg] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list
+sudo apt update
+sudo apt install google-chrome-stable
+```
 
 * Settings->Default Apps->set web browser to Google Chrome
 
-## Command line setup
-
-* sudo apt install curl vim build-essential flatpak inotify-tools rclone ruby elixir postgresql postgresql-contrib nginx libimage-exiftool-perl imagemagick ffmpeg php8.1 php8.1-xml rysnc
-* git clone git@github.com:allen-garvey/bash-dotfiles.git
-
 ## Git
 
-* Set default git user and email address
+* `git config --global user.name "Your Name"`
+* `git config --global user.email "you@example.com"`
 
-## Sublime Text
+## SSH
 
-* Install Sublime Text https://www.sublimetext.com/docs/linux_repositories.html
-* Preferences->Select color scheme->monokai
-* https://github.com/allen-garvey/sublime-snippets
+* [Generate SSH Key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
 ## VS Code
 
 * https://code.visualstudio.com/docs/setup/linux
 * [Preferences](https://github.com/allen-garvey/vscode-preferences)
 
+## Sublime Text
+
+* Install Sublime Text https://www.sublimetext.com/docs/linux_repositories.html
+* Use method similar to VS code to safely associate signing keys with package
+* Make sure `sudo apt install apt-transport-https` has been done from VS code step
+
+```sh
+wget -qO- https://download.sublimetext.com/sublimehq-pub.gpg | gpg --dearmor > packages.sublime.gpg
+sudo install -D -o root -g root -m 644 packages.sublime.gpg /etc/apt/keyrings/packages.sublime.gpg
+echo "deb [signed-by=/etc/apt/keyrings/packages.sublime.gpg] https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+```
+
+* Preferences->Select color scheme->monokai
+* https://github.com/allen-garvey/sublime-snippets
+
+## Command line setup
+
+* sudo apt install curl make inotify-tools elixir postgresql postgresql-contrib nginx libimage-exiftool-perl imagemagick ffmpeg php8.3 php8.3-xml rysnc
+* sudo snap install ruby
+* sudo snap install rclone
+
 ## Node
 
 * `mkdir -p ~/.bin`
 * https://nodejs.org/en/download/prebuilt-binaries
-* npm install -g npm-check-updates
+* `npm install -g npm-check-updates`
+
+## Applications from package manager
+
+* gimp, dragon player, git cola, vlc player
+
+### Gimp
+
+* Settings change icons
+
+* Settings -> image windows -> appearance -> uncheck show layer boundary
 
 ## Applications
-
-* Gimp - flatpak install https://flathub.org/repo/appstream/org.gimp.GIMP.flatpakref
-
-* Dragon player
-
-* Git Cola
 
 * Krita
 
