@@ -17,7 +17,7 @@
 
 ## Command line setup
 
-* sudo apt install git curl vim build-essential flatpak inotify-tools rclone ruby elixir postgresql postgresql-contrib nginx libimage-exiftool-perl imagemagick ffmpeg php8.1 php8.1-xml rysnc
+* sudo apt install curl vim build-essential flatpak inotify-tools rclone ruby elixir postgresql postgresql-contrib nginx libimage-exiftool-perl imagemagick ffmpeg php8.1 php8.1-xml rysnc
 * git clone git@github.com:allen-garvey/bash-dotfiles.git
 
 ## Git
