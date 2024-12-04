@@ -82,7 +82,9 @@ echo "deb [signed-by=/etc/apt/keyrings/packages.sublime.gpg] https://download.su
 
 ## Applications
 
-* Krita
+* Krita - download app image and save to `~/Applications`
+* To add to task bar search for `menu editor` in applications search to open KDE Menu editor
+* Add a Krita as a new item and select the app image as the executable
 
 ## Apache
 
