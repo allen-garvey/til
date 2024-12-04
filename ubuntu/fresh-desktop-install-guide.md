@@ -60,9 +60,15 @@ echo "deb [signed-by=/etc/apt/keyrings/packages.sublime.gpg] https://download.su
 
 ## Command line setup
 
-* sudo apt install curl make inotify-tools elixir postgresql postgresql-contrib nginx libimage-exiftool-perl imagemagick ffmpeg php8.3 php8.3-xml rysnc
+* sudo apt install curl build-essential inotify-tools postgresql postgresql-contrib nginx libimage-exiftool-perl imagemagick ffmpeg php8.3 php8.3-xml rysnc
 * sudo snap install ruby
 * sudo snap install rclone
+
+## Elixir
+
+* `sudo apt install erlang`
+* Download [Elixir prebuilt binary](https://github.com/elixir-lang/elixir/releases) for given Erlang/OTP version
+* Move binary to `~/.bin` and add to `$PATH`
 
 ## Node
 
