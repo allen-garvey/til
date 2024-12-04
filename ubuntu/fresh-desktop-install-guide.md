@@ -38,6 +38,13 @@ sudo apt install google-chrome-stable
 
 * [Generate SSH Key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
+* Add the following to `~/.ssh/config` to prevent timeouts
+```
+Host *
+    ServerAliveInterval 60
+    ServerAliveCountMax 10
+```
+
 ## VS Code
 
 * https://code.visualstudio.com/docs/setup/linux
