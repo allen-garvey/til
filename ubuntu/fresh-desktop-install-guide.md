@@ -127,8 +127,8 @@ Apache is installed by PHP
 
 ## Umbrella
 
-- At project root `mix ecto.create`
-
-- Go into grenadier `mix ecto.migrate`
+- Go into apps/grenadier `mix ecto.create`
 
 - Import database backup `gunzip -c <database_backup>.sql.gz | psql umbrella`
+
+- In grenadier `mix ecto.migrate`
