@@ -88,7 +88,7 @@ echo "deb [signed-by=/etc/apt/keyrings/packages.sublime.gpg] https://download.su
 
 ## Applications from package manager
 
-- gimp, dragon player, git cola, vlc player
+- gimp, git-cola, vlc player
 
 ### Gimp
 
