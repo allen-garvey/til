@@ -90,6 +90,10 @@ echo "deb [signed-by=/etc/apt/keyrings/packages.sublime.gpg] https://download.su
 
 - gimp, git-cola, vlc player
 
+## Imagemagick
+
+* Update policy by following `image-magick-cache-resources-exhausted.sh` in this repository
+
 ### Gimp
 
 - Settings change icons
