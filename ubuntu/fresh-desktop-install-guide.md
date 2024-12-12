@@ -138,3 +138,5 @@ Apache is installed by PHP
 - In grenadier `mix ecto.migrate`
 
 - If you get an Invalid CSRF error when submitting the grenadier form, this is because you compiled the umbrella project before the proper environment variables were set. In this case delete the `_build` folder and recompile the project.
+
+- In `apps/photog` follow readme for creating symbolic links for media directories
