@@ -84,6 +84,7 @@ echo "deb [signed-by=/etc/apt/keyrings/packages.sublime.gpg] https://download.su
 
 - `mkdir -p ~/.bin`
 - https://nodejs.org/en/download/prebuilt-binaries
+- `npm config set ignore-scripts true`
 - `npm install -g npm-check-updates`
 
 ## Applications from package manager
