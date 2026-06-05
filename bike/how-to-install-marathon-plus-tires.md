@@ -1,4 +1,4 @@
-# How to install Schalbe Marathon Plus tires
+# How to install Schwalbe Marathon Plus tires
 
 ## Tools required
 
